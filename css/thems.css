@@ -1,0 +1,51 @@
+/* bona fonts  */
+.bona_fonts {
+    font-family: "Bona Nova SC", serif !important;
+    font-style: normal;
+}
+
+
+.text-red-dark {
+    color: #621C16;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+.fs-9{
+    font-size: 9px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.mns-3 {
+    margin-left: -1.5rem;
+}
+
+
+.bg-lights {
+    background: #fffde2;
+}
+
+
+
+.footer-overlay {
+    background: #fffde2db;
+    backdrop-filter: blur(10px);
+    height: 100%;
+    width: 100%;
+}
+.text-justify{
+    text-align: justify;
+}
+.btn-red{
+    background: #621C16;
+    color: white;
+
+}

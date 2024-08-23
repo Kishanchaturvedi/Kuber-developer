@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kuber Developer</title>
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- icon link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- bona fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- css class  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/thems.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- aos animations  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- gallery  -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="">
+        <div
+            class="navbar-blur d-flex justify-content-between align-items-center px-md-4 px-2 pb-3 pt-2 pe-5 fixed-top ">
+            <div class="nav-logo d-flex align-items-center justify-content-center">
+                <img src="/img/logo k.png" alt="" class="img-contain">
+                <div class="">
+                    <p class="mb-0 mt-3 mns-3 text-uppercase fw-bold text-red-dark ">kuber developer</p>
+                </div>
+            </div>
+            <div class="d-lg-flex d-none gap-xl-5 gap-4">
+                <li class=" nav-link position-relative nav-hover"><a href="/"
+                        class="nav-hover fs-5 text-capitalize nav-link">Home</a>
+                </li>
+                <li class=" nav-link position-relative nav-hover"><a href="#aboutUs"
+                        class="nav-hover fs-5 text-capitalize nav-link">About
+                        Us</a></li>
+                <li class=" nav-link position-relative nav-hover"><a href="#gallary"
+                        class="nav-hover fs-5 text-capitalize nav-link">Gallery</a>
+                </li>
+                <li class=" nav-link position-relative nav-hover"><a href="#amenities"
+                        class="nav-hover fs-5 text-capitalize nav-link">amenities</a>
+                </li>
+                <li class=" nav-link position-relative nav-hover"><a href="#plans"
+                        class="nav-hover fs-5 text-capitalize nav-link">plans</a>
+                </li>
+                <li class=" nav-link position-relative nav-hover"><a href="#contactUs"
+                        class="nav-hover fs-5 text-capitalize nav-link">Contact
+                        Us</a></li>
+            </div>
+            <button class="border-0 bg-transparent d-lg-none" onclick="openNav()"><i
+                    class="bi bi-list fs-1"></i></button>
+        </div>
+        <div class=" mobile-nav d-flex justify-content-center gap-3 align-items-center flex-column text-center bg-white"
+            id="mobileNav">
+            <button class="bg-transparent border-0 position-absolute top-0 end-0 m-4" onclick="closeNav()"><i
+                    class="bi bi-x fs-1"></i></button>
+            <a href="/" class="text-capitalize nav-link">home</a>
+            <a href="#aboutUs" onclick="closeNav()" class="text-capitalize nav-link">about us</a>
+            <a href="#gallary" onclick="closeNav()" class="text-capitalize nav-link">gallery</a>
+            <a href="#amenities" onclick="closeNav()" class="text-capitalize nav-link">amenities</a>
+            <a href="#plans" onclick="closeNav()" class="text-capitalize nav-link">plans</a>
+            <a href="#contactUs" onclick="closeNav()" class="text-capitalize nav-link">contact us</a>
+
+        </div>
+        <div class="nav-overlay d-none" onclick="closeNav()" id="navOverlay"></div>
+    </nav>
+    <header class="">
+        <div class="">
+            <div class="position-relative d-flex justify-content-center align-items-center text-center px-3">
+                <div class="top-banner">
+                    <img src="img/shanti 6.jpg" alt="" class="img-cover">
+                </div>
+                <div class="overlay-top position-absolute px-3"></div>
+                <div class="position-absolute my-5 mx-md-5 px-5 pb-3 rounded-5 filter-blur px-3">
+                    <div class="text-center d-flex flex-wrap flex-column justify-content-center align-items-center">
+                        <div class="kuber-logo">
+                            <img src="img/logo k.png" alt="" class="img-contain">
+                        </div>
+                        <div class="text-center">
+                            <h1 class="mb-0 text-uppercase fw-bold text-red-dark">kuber devoloper</h1>
+                            <p class="mb-0 text-uppercase">premium residential villas</p>
+                            <p class="mb-0 ">विशेषरपुर, शीतला चौकियां धाम, जौनपर</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-relative mt-3 px-md-3 d-lg-block d-flex justify-content-center align-items-center">
+            <div class="main-banner">
+                <img src="/img/shatisss.jpg" alt="" class="img-cover">
+            </div>
+            <div
+                class="filter-blur top-0 bg-side-color ms-md-4 ms-lg-1 mt-lg-4 mt-2 d-flex justify-content-center align-items-center">
+                <div class="text-center px-xxl-5 px-md-2 px-1 py-xxl-5 py-md-3 py-1">
+                    <h2 class="text-red-dark pt-sm-5 pt-4 d-flex justify-content-center align-items-center flex-column">
+                        Lets
+                        Live The Life
+                        <span class=""> Your Deserve</span>
+                    </h2>
+                    <p class="px-4 pt-3">How would be one's dream home? Ideally, it should be located on
+                        the outskirt of a city where you can find true happiness and peace.
+                    </p>
+                    <p class="px-4">This Project is one such project launched by Kuber Developers. Perfect
+                        locations, desirable amenities, and lush greenery are some of its
+                        noteworthy features. A dedicated Yoga Park, Open Gym, and Children's
+                        Play Area are what we keep at the forefront of our project.</p>
+                    <p class="px-4">Providing a secure, healthy, and close to the nature environment is our
+                        ultimate mission. We are backed by a team of experts who ensure all
+                        your questions get answered.</p>
+                    <p class="px-4">We endeavour to fulfil all your expectations. So let's build a happy place
+                        where memories are created. The project is all about open spaces to find
+                        solace and connect with nature. It is the commitment of Kuber
+                        Developers!</p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main class="">
+        <div class="mt-3 px-3 position-relative d-lg-block d-flex justify-content-center align-items-center">
+            <div class="top-banner">
+                <img src="/img/shanti 12.jpg" alt="" class="img-cover">
+            </div>
+            <div class=" position-absolute bg-shanti-color me-lg-3">
+                <div class="text-center px-5 h-100 w-100">
+                    <div class="shanti-logo">
+                        <img src="/img/shanti_villlas.png" alt="" class="img-contain">
+                    </div>
+                    <i class="text-red-dark d-flex flex-column text-center fs-3 mt-4">A New Prestigious
+                        Address <span class="m-0">& Landmark of Jaunpur</span></i>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p
+                            class="bona_fonts position-absolute bottom--5 mb-0 d-flex text-center justify-content-center align-items-center mx-0">
+                            INTRODUCING</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="px-lg-3 px-1 " id="gallary">
+        <div class="my-5 gallary">
+            <h1 class="display-font text-center text-red-dark">Our Gallary</h1>
+            <div class="swiper gallary-swiper-1 mt-5">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-1">
+                            <img id="img-1" src="/img/shanti 1.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-2">
+                            <img id="img-2" src="/img/shanti 2.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-3">
+                            <img id="img-3" src="/img/shanti 3.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-4">
+                            <img id="img-4" src="/img/shanti 4.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-5">
+                            <img id="img-5" src="/img/shanti 5.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-6">
+                            <img id="img-6" src="/img/shanti 6.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-7">
+                            <img id="img-7" src="/img/shanti 7.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-8">
+                            <img id="img-8" src="/img/spacification-1.png" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div dir="rtl" class="swiper gallary-swiper-2 mt-3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-17">
+                            <img id="img-17" src="/img/spacification-2.png" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-9">
+                            <img id="img-9" src="/img/shanti 8.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-10">
+                            <img id="img-10" src="/img/night view .jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-11">
+                            <img id="img-11" src="/img/night view 1.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-12">
+                            <img id="img-12" src="/img/shanti 1.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-13">
+                            <img id="img-13" src="/img/shanti 2.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-14">
+                            <img id="img-14" src="/img/shanti 3.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-15">
+                            <img id="img-15" src="/img/shanti 4.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a data-fslightbox href="#img-16">
+                            <img id="img-16" src="/img/shanti 5.jpg" alt="Image">
+                            <span class="gallery-view-ovelay text-red-dark fw-semibold">VIEW</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="bg-lights py-5">
+        <div class="px-lg-2 px-3">
+            <h1 class="text-red-dark text-center ">
+                Mission & Vission
+            </h1>
+            <div class="d-lg-flex justify-content-around pt-5">
+                <div class="col-lg-5">
+                    <h2 class="text-red-dark">
+                        Mission Statement
+                    </h2>
+                    <p class="text-justify">
+                        At Kuber Developer, our mission is to provide exceptional real estate services that exceed our
+                        clients' expectations. We are dedicated to:
+                        <li class="text-justify">Delivering high-quality, personalized service to meet the unique needs
+                            of every
+                            client.</li>
+                        <li class="text-justify">Building long-lasting relationships based on trust, integrity, and
+                            transparency.
+                        </li>
+                        <li class="text-justify">Utilizing our extensive market knowledge and innovative technology to
+                            ensure our
+                            clients achieve their real estate goals.</li>
+                        <li class="text-justify">Contributing to the growth and development of the communities we serve
+                            through
+                            responsible and sustainable practices.</li>
+
+                    </p>
+                </div>
+                <div class="col-lg-5 pt-md-0 pt-3">
+                    <h2 class="text-red-dark">
+                        Vission Statement
+                    </h2>
+                    <p class="text-justify">
+                        Our vision is to be the leading real estate company, recognized for our commitment to excellence
+                        and our dedication to creating value for our clients. We aspire to:
+                    </p>
+                    <li class="text-justify">Be the preferred choice for clients seeking residential, commercial, and
+                        investment
+                        properties.</li>
+                    <li class="text-justify">To redefine the real estate experience by creating a seamless,
+                        transparent, and customer-centric journey that empowers individuals and communities to achieve
+                        their dreams of owning and investing in property. We aspire to lead the industry with innovative
+                        solutions, sustainable practices, and a commitment to excellence, fostering environments where
+                        people thrive and businesses grow.</li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="px-lg-3 px-1 " id="aboutUs">
+        <div class="position-relative d-xl-block d-none">
+            <div class="specific-img z-0">
+                <img src="/img/bedroom.jpg" alt="" class="img-cover">
+            </div>
+            <div
+                class="position-absolute top-0 start-0 h-100 bg-yellow d-flex flex-column justify-content-center align-items-center z-2 left-specific">
+                <div class="px-5 ">
+                    <h6 class="text-red-dark fw-600 text-uppercase mb-0">BEDROOMS</h6>
+                    <p class="m-0 text-red-dark fs-12"><span class="fw-600">Flooring:</span>Vitrified Tiles (Italian
+                        design finish/Wooden
+                        Finish in Master BR) </p>
+                    <p class="m-0 text-red-dark fs-12"><span class="fw-600">Wall finishes:</span>: Plastic Emulsion
+                        Paint (Dulux/Asian
+                        Paints/Nerolac/Equivalent)</p>
+                    <p class="m-0 text-red-dark fs-12"><span class="fw-600">Ceiling:</span>Oil Bound Distemper and Cove
+                        False Ceiling in all
+                        bed rooms along wall.</p>
+
+                    <h6 class="text-red-dark fw-600 text-uppercase mt-3 mb-0">toilet</h6>
+                    <p class="m-0 text-red-dark fs-12"><span class="fw-600">Flooring:</span> Anti-Skid Ceramic Tiles
+                    </p>
+                    <p class="m-0 text-red-dark fs-12"><span class="fw-600">Dado: </span>Ceramic Tiles.</p>
+                    <p class="m-0 text-red-dark fs-12"><span class="fw-600">Wall finishes:</span> Plastic Emulsion
+                        Paint (Dulux/Asian
+                        Paints/Nerolac/Equivalent)</p>
+                    <p class="m-0 text-red-dark fs-12"><span class="fw-600">Ceiling:</span> Grid False Ceiling</p>
+                    <p class="m-0 text-red-dark fs-12"><span class="fw-600">CP Fittings & Chinaware:</span> In all
+                        Toilets
+                        (Kohler/Grohe/Roca/Jaquar equivalent)</p>
+
+                    <h6 class="text-red-dark fw-600 text-uppercase mt-3 mb-0">BALCONY</h6>
+                    <p class="m-0 text-red-dark fs-12"><span class="fw-600">Flooring:</span> Anti-Skid Ceramic Tiles
+                    </p>
+                    <p class="m-0 text-red-dark fs-12"><span class="fw-600">Handrail:
+                        </span>SS 304 Grade Railing with toughened Glass</p>
+
+                    <h6 class="text-red-dark fw-600 text-uppercase mt-3 mb-0">ELECTRICAL</h6>
+                    <li class="m-0 text-red-dark fs-12 "> Anti-Skid Ceramic Tiles </li>
+                    <li class="fs-12 text-red-dark">Copper Concealed Fireproof wiring (Polycab, Finolex or equivalent)
+                        in all rooms, Modular
+                        switches</li>
+                    <li class="fs-12 text-red-dark">Provision of Copper piping for AC in all Bedrooms and
+                        Drawing/Dinning areas</li>
+                    <li class="fs-12 text-red-dark">Ceiling Light& Fans in all Bed rooms & Living Dining </li>
+                    <li class="fs-12 text-red-dark">Exhaust Fan in all Toilet</li>
+                    <li class="fs-12 text-red-dark">Provision for TV in all Bedrooms, Living Dining, and Family lounge
+                    </li>
+                    <li class="fs-12 text-red-dark">High Definition 4 CCTV Camera with Monitor (CP Plus/
+                        Hikvision/Equivalent)</li>
+                    <li class="fs-12 text-red-dark">Switch Socket Provision for Geyser in all Bathrooms & Kitchen.
+                    </li>
+
+                    <h6 class="text-red-dark fw-600 text-uppercase mt-3 mb-0">PLUMBING</h6>
+                    <li class="fs-12 text-red-dark">CPVC pipes for Water supply (Make: Supreme, Astral, Prince or
+                        equivalent)</li>
+                    <li class="fs-12 text-red-dark">Upvc Pipes for Drainage & Sewer Lines (Make: Supreme, Astral, Prince
+                        or equivalent)</li>
+                    <li class="fs-12 text-red-dark">Water storage: 1000 ltr Triple Layer PVC Overhead tank.</li>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center z-1">
+                <p class="text-portrait-right text-uppercase position-absolute bona_fonts">SPECIFICATIONs</p>
+            </div>
+        </div>
+
+        <!-- second  -->
+
+        <div class="position-relative d-xl-block d-none">
+            <div class="specific-img z-0">
+                <img src="/img/kitchen.jpg" alt="" class="img-cover">
+            </div>
+            <div
+                class="position-absolute top-0 end-0 h-100 bg-yellow d-flex flex-column justify-content-center align-items-center z-2 right-spercific ">
+                <div class="">
+                    <div class="px-5">
+                        <h6 class="text-red-dark fw-600 text-uppercase mb-0">STRUCTURE</h6>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600"></span>R.C.C. Frame structure with
+                            Bricks partition walls.</p>
+
+
+                        <h6 class="text-red-dark fw-600 text-uppercase mt-3 mb-0">DRAWING/DINING ROOM</h6>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Flooring:</span> Double Charge Vitrified
+                            Tiles (Italian Design finish) (Orient/Somany/
+                            Simpolo/Varmora / Kajaria or Equivalent)
+                        </p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Wall Finish: </span> Plastic Emulsion
+                            Paint
+                            (Dulux /Asian Paints/ Berger or Equivalent) </p>
+
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Ceiling:</span> False Ceiling with cove.
+                        </p>
+
+
+                        <h6 class="text-red-dark fw-600 text-uppercase mt-3 mb-0">KITCHEN</h6>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Furnishes:</span> Modular Kitchen
+                            cabinet
+                            with Chimney (Faber, Kaff, Hindware or equivalent)
+                        </p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Flooring:
+                            </span>Anti Skid Tiles.</p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Dado:
+                            </span>Tiles Up to 2ft above the counter</p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Wall Finish:
+                            </span>: Plastic Emulsion Paint (Dulux/Asian Paints/Nerolac/Equivalent).</p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Ceiling:
+                            </span>Oil Bound Distemper.</p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Counter:
+                            </span>Granite/Engineering Stone.</p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">SS Sink with Sink Mixture:
+                            </span>Single bowl with drain board (Jayana/Hindware or equivalent).</p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Special Feature:
+                            </span> Gas leakage detector inside Kitchen.</p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600"></span>Provision for Water Purifier &
+                            Geyser
+                            in Kitchen with Connection Pipe.</p>
+
+                        <h6 class="text-red-dark fw-600 text-uppercase mt-3 mb-0">STAIRCASE</h6>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Tread & Riser: </span>Tread & Riser.</p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Wall Finishes: </span> Plastic Emulsion
+                            Paint (Dulux/Asian Paints/Nerolac/ Equivalent) Ceiling: Oil
+                            bound Distemper.</p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Railing: </span>SS 304 Grade Railing
+                            with
+                            Toughened Glass.</p>
+
+
+                        <h6 class="text-red-dark fw-600 text-uppercase mt-3 mb-0">DOOR & WINDOWS</h6>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Wooden Chowkhats: </span>Red Mirantee
+                            wood.
+                        </p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Door: </span>Laminated Flush Doors
+                            Shutters
+                            (Make: Doortek, Kalpataru or equivalent).</p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Main entrance Door: </span> Teakwood
+                            Finish
+                            laminated door with magic eye.
+                            Powder coated Aluminium windows with clear glass.
+                            Digital lock at Main Gate (Samsung, Alba Urmet, Assa Abloy, Godrej or equivalent).</p>
+                        <p class="m-0 text-red-dark fs-12"><span class="fw-600">Hardware: </span>Mortise Lock Make(IPSA,
+                            Godrej, Harrison or equivalent).</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center z-1">
+                <p class="text-portrait-left text-uppercase position-absolute bona_fonts">SPECIFICATIONs</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="px-lg-3 px-1" id="amenities">
+        <div class="d-md-flex bg-lights flex-wrap">
+            <div class="col-md-6">
+                <h2 class="text-capitalize pt-5 ps-3 text-red-dark">amenities</h2>
+
+                <ol class="pt-3">
+                    <li class="text-red-dark">Attractive Entrance Gate </li>
+                    <li class="text-red-dark">Allotted Car Parking (Stilt & Open Parking)</li>
+                    <li class="text-red-dark">Landscape Garden</li>
+                    <li class="text-red-dark">Jogging/Walking Track 5. Fully Equipped Gymnasium</li>
+                    <li class="text-red-dark">Children's play Area</li>
+                    <li class="text-red-dark">Yoga /Aerobics room</li>
+                    <li class="text-red-dark"> Indoor Games (Table Tennis, Snooker & Billiards Table)</li>
+                    <li class="text-red-dark">Swimming Poo</li>
+                    <li class="text-red-dark">Badminton Court</li>
+                    <li class="text-red-dark">Roof Top Restaurant</li>
+                    <li class="text-red-dark">CCTV Surveillance</li>
+                    <li class="text-red-dark">Fire Safety</li>
+                    <li class="text-red-dark"> Security Cabin</li>
+                    <li class="text-red-dark">Automatic Lift </li>
+                    <li class="text-red-dark"> Rainwater Harvesting</li>
+                    <li class="text-red-dark">24x7 Water Supply</li>
+                    <li class="text-red-dark">Modular Kitchen</li>
+                    <li class="text-red-dark">Video Door Phone connected to lobby</li>
+                    <li class="text-red-dark">Solar Power Backup Generator in Common Areas</li>
+
+                </ol>
+            </div>
+            <div class="d-md-flex d-none flex-wrap col-md-6 ">
+                <div class="facality-img col-md-4 col-12 pt-2 pe-2">
+                    <img id="img-17" src="/img/fac-1.png" alt="Image" class="img-cover">
+                </div>
+                <div class="facality-img col-md-4 col-12 pt-2 pe-2">
+                    <img id="img-18" src="/img/fac-2.png" alt="Image" class="img-cover">
+                </div>
+                <div class="facality-img col-md-4 col-12 pt-2 pe-2">
+                    <img id="img-19" src="/img/fac-3.png" alt="Image" class="img-cover">
+                </div>
+                <div class="facality-img col-md-6 col-12 pt-2 pe-2">
+                    <img id="img-20" src="/img/fac-4.png" alt="Image" class="img-cover">
+                </div>
+                <div class="facality-img col-md-6 col-12 pt-2 pe-2">
+                    <img id="img-18" src="/img/fac-6.png" alt="Image" class="img-cover">
+                </div>
+                <div class="facality-img col-md-4 col-12 pt-2 pe-2">
+                    <img id="img-21" src="/img/fac-5.png" alt="Image" class="img-cover">
+                </div>
+                <div class="facality-img col-md-4 col-12 pt-2 pe-2">
+                    <img id="img-18" src="/img/fac-7.png" alt="Image" class="img-cover">
+                </div>
+                <div class="facality-img col-md-4 col-12 pt-2 pe-2">
+                    <img id="img-18" src="/img/fac-8.png" alt="Image" class="img-cover">
+                </div>
+
+            </div>
+            <!-- carousel  Amenities -->
+            <div id="carouselExample" class="carousel slide d-md-none d-block mt-5">
+                <div class="carousel-inner">
+                    <div class="carousel-item facality-img active">
+                        <img src="/img/fac-1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item facality-img">
+                        <img src="/img/fac-2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item facality-img">
+                        <img src="/img/fac-3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item facality-img">
+                        <img src="/img/fac-4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item facality-img">
+                        <img src="/img/fac-6.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item facality-img">
+                        <img src="/img/fac-7.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item facality-img">
+                        <img src="/img/fac-5.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item facality-img">
+                        <img src="/img/fac-8.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="col-12">
+                <img src="/img/map.png" alt="" class="img-cover">
+            </div>
+        </div>
+    </section>
+    <section class="px-lg-3 px-1" id="plans">
+        <h2 class="text-red-dark text-uppercase py-5 bg-lights d-flex align-items-center justify-content-center">
+            our plans
+        </h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/img/map-1.png" alt="" class="img-cover">
+            </div>
+            <div class="col-md-6">
+                <img src="/img/map-2.png" alt="" class="img-cover">
+            </div>
+            <div class="col-md-6">
+                <img src="/img/map-3.png" alt="" class="img-cover">
+            </div>
+            <div class="col-md-6">
+                <img src="/img/map-4.png" alt="" class="img-cover">
+            </div>
+            <div class="col-md-6">
+                <img src="/img/map-5.png" alt="" class="img-cover">
+            </div>
+            <div class="col-md-6">
+                <img src="/img/map-6.png" alt="" class="img-cover">
+            </div>
+        </div>
+    </section>
+    <footer class="px-4 mt-5 pb-4 bg-lights" id="contactUs">
+        <div class=" d-flex flex-wrap justify-content-between mt-4">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="logo-kuber d-flex justify-content-center align-items-center flex-column mt-3 float-start">
+                    <img src="/img/logo k.png" alt="" class="img-contain d-flex justify-content-start">
+                    <h5 class="text-red-dark text-uppercase fw-bold">kuber developer</h5>
+                </div>
+                <p class="fs-12 text-red-dark text-justify mt-5 pt-5">
+                    This brochure is purely conceptual and aims to assist the reader with images, architectural
+                    drawings, area, price, and other information. Kuber Developers is not responsible for any issues
+                    arising from the information provided. None of the representations constitute a legally binding
+                    offer. The developer reserves the right to change plans, specifications, images, prices, and
+                    other details without prior notice.
+                </p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12 ps-lg-5">
+                <h5 class="text-uppercase text-red-dark my-4">menu</h5>
+                <a href="/" class="nav-link text-red-dark text-capitalize my-2">home</a>
+                <a href="#aboutUs" class="nav-link text-red-dark text-capitalize my-2">about us</a>
+                <a href="#gallary" class="nav-link text-red-dark text-capitalize my-2">gallery</a>
+                <a href="#amenities" class="nav-link text-red-dark text-capitalize my-2">Amenities</a>
+                <a href="#plans" class="nav-link text-red-dark text-capitalize my-2"> plans</a>
+                <a href="#contactUs" class="nav-link text-red-dark text-capitalize my-2">contact us</a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <h5 class="text-red-dark text-capitalize my-4">mail us</h5>
+                <a href="mailto:kuberdevelopers24@gmail.com" class="nav-link">kuberdevelopers24@gmail.com</a>
+                <h5 class="text-red-dark text-capitalize my-4">call us</h5>
+                <div class="d-flex gap-4">
+                    <a href="tel:+91 9984711001" class="nav-link">+91 9984711001</a>
+                    <a href="tel:+91 8299355109" class="nav-link">+91 8299355109</a>
+                </div>
+                <h5 class="text-red-dark text-capitalize my-4">address</h5>
+                <p class="">Vishesharpur, Sheetala Chaukiya Dham,Jaunpur</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 py-2">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3593.1523614899434!2d82.71439772485608!3d25.76553055844778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sVishesharpur%2C%20Sheetala%20Chaukiya%20Dham%2CJaunpur!5e0!3m2!1sen!2sin!4v1723125073126!5m2!1sen!2sin"
+                    class="h-100 w-100" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- <div class="col-3">
+                <h4 class="text-red-dark text-capitalize my-4">contact us</h4>
+                <form action="" onsubmit="return formValidation()">
+                    <div class="mb-3">
+                        <div class="position-relative">
+                            <input type="text" class="form-control mb-3" id="InputName" placeholder="Name">
+                            <span class="text-danger fs-9 position-absolute top-100 text-capitalize"
+                                id="nameError"></span>
+                        </div>
+                        <div class="position-relative">
+                            <input type="tel" class="form-control mb-3" id="InputPhone" placeholder="Mobile no.">
+                            <span class="text-danger fs-9 position-absolute top-100 text-capitalize"
+                                id="mobileError"></span>
+                        </div>
+                        <div class="position-relative">
+                            <input type="email" class="form-control mb-3" id="InputEmail" placeholder="Email id">
+                            <span class="text-danger fs-9 position-absolute top-100 text-capitalize"
+                                id="emailError"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="border-0 px-3 py-2 rounded mt-3 btn-red">Submit</button>
+                </form>
+            </div> -->
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- gallary js  -->
+    <script src="/js/script.js"></script>
+    <script src="/js/fslightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- animated-js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

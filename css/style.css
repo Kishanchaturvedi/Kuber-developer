@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+
+}
+
+.navbar-blur{
+    background-color: #fff9f985;
+    backdrop-filter: blur(7px);
+    z-index: 100 !important;
+}
+
+.open-nav {
+    right: 0 !important;
+    transition: all .1s ease-in-out;
+
+}
+
+.mobile-nav {
+    width: 18rem !important;
+    height: 100% !important;
+    position: fixed;
+    z-index: 200;
+    right: -200rem;
+    background: red;
+    top: 0;
+    bottom: 0;
+    transition: all .3s ease-in-out;
+}
+
+.nav-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff7c;
+    z-index: 150;
+    backdrop-filter: blur(5px);
+    /* display: none; */
+}
+
+.nav-logo {
+    height: 4rem;
+}
+
+.overlay-top {
+    background-color: rgba(10, 10, 10, 0.458);
+    /* opacity: 80%; */
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.top-banner {
+    height: 100vh;
+    width: 100%;
+}
+
+.main-banner {
+    height: 43rem;
+    width: 100%;
+}
+
+.img-cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-contain {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.kuber-logo {
+    height: 12rem;
+    width: 12rem;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap !important;
+}
+
+
+.filter-blur {
+    position: absolute;
+    /* top: 0; */
+    backdrop-filter: blur(5px);
+    background: #ffffff86;
+}
+
+.bg-side-color {
+    backdrop-filter: blur(5px);
+    background: #ffffffbb;
+    height: 94%;
+    width: 48%;
+}
+
+/* 33333333333333333 */
+/* .bg-img{
+    background-image: url("/img/bg-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 48% !important;
+    height: 95% !important;
+    filter: blur(8px);
+} */
+.shanti-logo {
+    height: 25rem;
+}
+
+.bg-shanti-color {
+    background: #ffe79abb;
+    top: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    height: 100%;
+    width: 40%;
+}
+
+.bottom--5 {
+    bottom: -20px;
+    font-size: 4rem;
+    opacity: 15%;
+}
+
+
+/* gallery*********************** */
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.gallary .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallary .swiper-slide {
+    width: auto;
+    height: 13rem !important;
+}
+
+.gallary .swiper-slide img {
+    height: 13rem;
+    object-fit: cover;
+    /* filter: grayscale(1) brightness(120%); */
+    border-radius: .5rem;
+    position: relative;
+
+}
+
+.gallary .swiper-slide a:hover>.gallery-view-ovelay {
+    opacity: 100%;
+}
+
+
+
+.gallery-view-ovelay {
+    position: absolute;
+    text-transform: capitalize;
+    z-index: 100;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.437);
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    opacity: 0;
+}
+
+/*********************** section ************************ */
+
+.specific-img {
+    height: 45rem;
+
+}
+
+.left-specific {
+    width: 50%;
+}
+
+.right-spercific {
+    width: 50%;
+}
+
+.bg-yellow {
+    background: #ffe79abb;
+    backdrop-filter: blur(10px);
+    /* width: 50%; */
+
+}
+
+
+
+/*  */
+.text-portrait-right {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    top: 50%;
+    transform: translate(24%, -50%);
+    font-size: 4.5rem;
+    color: white;
+}
+
+
+
+.text-portrait-left {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    top: 50%;
+    transform: translate(-24%, -50%);
+    font-size: 4.5rem;
+    color: white;
+}
+
+/* .left-50{
+    
+} */
+
+
+/* facality ************************* */
+.facality-img {
+    height: 15rem;
+    width: auto;
+}
+
+.logo-kuber {
+    height: 3rem;
+    /* width: 7rem; */
+}
+
+
+
+
+/********************* Media qureay Responsive phone ************************* */
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .main-banner {
+        height: 40rem;
+        width: 100%;
+    }
+
+    .bg-shanti-color {
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+    }
+
+    .specific-img {
+        height: 45rem;
+    }
+
+
+    .text-portrait-right {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        top: 50%;
+        transform: translate(24%, -50%);
+        font-size: 4.5rem;
+        color: white;
+    }
+
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .main-banner {
+        height: 40rem;
+        width: 100%;
+    }
+
+    .bg-side-color {
+        height: 95%;
+        width: 55%;
+    }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .main-banner {
+        height: 40rem;
+        width: 100%;
+    }
+
+    .bg-side-color {
+        border-radius: 20px;
+        width: 70%;
+    }
+
+    .bg-shanti-color {
+        right: auto;
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .bg-side-color {
+        width: 90%;
+        border-radius: 15px;
+    }
+}
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .bg-side-color {
+        width: 95%;
+        height: auto;
+    }
+
+    .main-banner {
+        height: 51rem;
+        width: 100%;
+    }
+
+    .bottom--5 {
+        font-size: 3rem;
+        bottom: -10px;
+    }
+}
